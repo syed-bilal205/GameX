@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>GameX - Gaming website</title>
+
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+
+
+</head>
+<body>
+
+    <div class="text-white fixed top-0 z-50 w-full flex items-center justify-between px-10 py-3 bg-[#141419] md:px-18">
+        <div class="flex items-center gap-1">
+            <img src="../favicon.svg" alt="logo" class="w-12">
+            <h6 class="text-white font-bold text-3xl">GameX</h6>
+        </div>
+        <div class="text-white">
+            <ul class=" gap-2 font-bold hidden md:flex ease-in duration-200 md:gap-6">
+                <li><a class="hover:text-[#ff8605]" href="#">HOME</a></li>
+                <li><a class="hover:text-[#ff8605]" href="#">ABOUT</a></li>
+                <li><a class="hover:text-[#ff8605]" href="#">TOURNAMNET</a></li>
+                <li><a class="hover:text-[#ff8605]" href="#">TEAM</a></li>
+                <li><a class="hover:text-[#ff8605]" href="#">GEARS</a></li>
+                <li><a class="hover:text-[#ff8605]" href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="z-[10] flex md:hidden" onclick="toggleMenu" >
+            <img src="../assets/align-justify.svg" alt="" class="text-white w-8" id="hamburger-btn">
+            <!-- <img src="../assets/x.svg" alt="" class="text-white w-8 " id="hamburger-btn"> -->
+        </div>
+        <div id="mobile-menu"  class="flex justify-center items-center text-white fixed top-0 right-0 w-[50%] h-[100%] ease-in-out duration-700 bg-black">
+            <ul class="flex flex-col gap-8 font-bold text-2xl ease-in duration-200 md:gap-6">
+                <li><a class="hover:text-[#ff8605]" href="#">HOME</a></li>
+                <li><a class="hover:text-[#ff8605]" href="#">ABOUT</a></li>
+                <li><a class="hover:text-[#ff8605]" href="#">TOURNAMNET</a></li>
+                <li><a class="hover:text-[#ff8605]" href="#">TEAM</a></li>
+                <li><a class="hover:text-[#ff8605]" href="#">GEARS</a></li>
+                <li><a class="hover:text-[#ff8605]" href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+  
+
+    <!-- navbar end -->
+
+    <!-- header section  -->
+    <div>
+        <div class="h-screen bg-cover bg-center" style="background-image:url(../assets/hero-banner.jpg)">
+            <div class="flex flex-col gap-4 justify-center items-center h-screen">
+                <h6 class="font-bold text-white text-xl tracking-widest md:text-2xl">THE SEASON 8</h6>
+                <h1 class="font-black text-7xl text-white italic tracking-widest md:text-9xl">STEAM</h1>
+                <div class="flex gap-4 items-center">
+                    <button class="px-4 py-2 text-white font-bold tracking-wide hover:bg-white hover:text-[#ff8605] ease-in-out duration-700 bg-[#ff8605]" style="clip-path: polygon(90% 0, 100% 34%, 100% 100%, 10% 100%, 0 66%, 0 0);">WATCH LIVE</button>
+                    <button class="text-white font-bold tracking-wide">DREAM MAKING</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- header end -->
+
+<!-- Experience section start -->
+
+    <div class="pt-20 bg-[#1b1320] flex flex-col gap-6 items-center justify-center md:flex-row">
+        <div class=" bg-[#141419]  uppercase py-6 px-4 w-[400px] md:w-[500px]">
+            <span class=" pb-4 text-[#ff8605] font-bold">Find team member</span>
+            <h2 class="text-white font-black text-4xl md:text-5xl">Experience just for </h2>
+            <h2 class="text-white pb-4 font-black text-4xl md:text-5xl"> gamers <span class="text-[#ff8605]">offer</span> </h2>
+            <p class="text-[#cccccc] pb-4">Nullam quis ante. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. In auctor lobortis lacus. Phasellus gravida semper nisi. Aliquam lobortis.</p>
+            <p class="text-[#ccc]">Will sharpen your brain and focus</p>
+        </div>
+            <div class="flex items-center justify-center">
+                    <img class="w-[80%]" src="../assets/about-img.png" alt="" >
+                    <!-- <img src="../assets/character-1.png" alt="">
+                    <img src="../assets/character-2.png" alt="">
+                    <img src="../assets/character-3.png" alt=""> -->
+            </div>
+        </div>
+    </div>
+
+
+<!-- Experience section end -->
+
+<!-- tournament section start -->
+    <div class="py-10 bg-[#1b1320] flex flex-col items-center justify-center gap-6 md:flex-row md:justify-evenly">
+        <div class="pb-8 flex flex-col items-center justify-center gap-4 uppercase flex-1">
+            <span class="text-[#ff8605] font-bold">Check out our next</span>
+            <h6 class="font-bold text-white text-2xl">Gaming tournaments !</h6>
+            <p class="text-center text-[#ccc] w-[80%]">Lpsum dolor sit amet, consectetur adipiscing elit, sed labore et dolore magna aliqua.</p>
+            <div>
+                <button class="px-4 py-2 text-white font-bold tracking-wide hover:bg-white hover:text-[#ff8605] ease-in-out duration-700 bg-[#ff8605]" style="clip-path: polygon(90% 0, 100% 34%, 100% 100%, 10% 100%, 0 66%, 0 0);">JOIN WITH US</button>
+            </div>
+        </div>
+        <div class="flex flex-col items-center gap-3 flex-1">
+            <h6 class="font-bold text-white text-3xl">PRIZE POOL</h6>
+            <button class="px-14 py-3 text-xl text-[#8d5921] font-bold tracking-wide rounded-full ease-in-out duration-700 bg-[#ff8605]">$80000</button>
+            <div>
+                <img src="../assets/prize-img.png" alt="">
+            </div>
+        </div>
+        <div class="flex items-center justify-evenly flex-1 bg-[#141419] px-4 py-5 rounded md:mx-6">
+            <div class="flex flex-col gap-4">
+                <h6 class="font-bold text-white text-3xl">LAST WINNERS</h6>
+                <div class="flex gap-4">
+                    <img src="../assets/winner-img-1.png" alt="">
+                    <img src="../assets/winner-img-2.png" alt="">
+                </div>
+                <div class="flex gap-10">
+                    <button class="px-3 py-1 text-white font-bold tracking-wide rounded bg-[#ff8605]">1ST PLACE</button>
+                    <button class="px-3 py-1 text-white font-bold tracking-wide rounded bg-[#ff8605]">2ND PLACE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- tournament section end -->
+
+<!-- slider start -->
+<div class="swiper mySwiper ">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="../assets/gallery-img-1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="../assets/gallery-img-2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="../assets/gallery-img-3.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="../assets/gallery-img-4.jpg" alt=""></div>
+    </div>
+    <div class="swiper-button-next text-[#ff8605] font-black text-5xl"></div>
+      <div class="swiper-button-prev  text-[#ff8605] font-black text-5xl"></div>
+      <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- slider end -->
+
+  <!-- active memers section start -->
+
+  <div class="flex items-center justify-center bg-[#1b1320]">
+    <div>
+        <h2 class="font-black text-4xl text-center text-white pt-6">ACTIVE MEMBERS</h2>
+        <div class="flex items-center justify-center pt-1">
+            <img src="../assets/section_line.png" alt="">
+        </div>
+        <div>
+            <div class="flex flex-wrap gap-3 items-center justify-center  cursor-pointer py-4 md:px-6">
+                <img src="../assets/team-member-1.png" class="h-[120px] hover:border-2 rounded-full border-[#ff8605]" alt="">
+                <img src="../assets/team-member-2.png" class="h-[120px] hover:border-2 rounded-full border-[#ff8605] " alt="">
+                <img src="../assets/team-member-3.png" class="h-[120px] hover:border-2 rounded-full border-[#ff8605]" alt="">
+                <img src="../assets/team-member-4.png" class="h-[120px] hover:border-2 rounded-full border-[#ff8605]" alt="">
+                <img src="../assets/team-member-5.png" class="h-[120px] hover:border-2 rounded-full border-[#ff8605]" alt="">
+                <img src="../assets/team-member-6.png" class="h-[120px] hover:border-2 rounded-full border-[#ff8605]" alt="">
+                <img src="../assets/team-member-7.png" class="h-[120px] hover:border-2 rounded-full border-[#ff8605]" alt="">
+                <img src="../assets/team-member-8.png" class="h-[120px] hover:border-2 rounded-full border-[#ff8605]" alt="">
+                <img src="../assets/team-member-9.png" class="h-[120px] hover:border-2 rounded-full border-[#ff8605]" alt="">
+                <img src="../assets/team-member-10.png" class="h-[120px] hover:border-2 rounded-full border-[#ff8605]" alt="">
+                <img src="../assets/team-member-11.png" class="h-[120px] hover:border-2 rounded-full border-[#ff8605]" alt="">
+                <img src="../assets/team-member-12.png" class="h-[120px] hover:border-2 rounded-full border-[#ff8605]" alt="">
+                <img src="../assets/team-member-13.png" class="h-[120px] hover:border-2 rounded-full border-[#ff8605]" alt="">
+                <img src="../assets/team-member-14.png" class="h-[120px] hover:border-2 rounded-full border-[#ff8605]" alt="">
+            </div>
+            <div class="flex items-center justify-center pt-2">
+                <button class="px-4 py-2 text-white font-bold tracking-wide hover:bg-white hover:text-[#ff8605] ease-in-out duration-700 bg-[#ff8605]" style="clip-path: polygon(90% 0, 100% 34%, 100% 100%, 10% 100%, 0 66%, 0 0);">VIEW ALL MEMBERS</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- active memers section end -->
+
+
+  <!-- check our gears section start -->
+
+  <div class="bg-[#1b1320] px-8">
+    <div>
+        <h2 class="font-black text-4xl text-center text-white pt-10">CHECK OUR GEARS</h2>
+        <div class="flex items-center justify-center pt-1">
+            <img src="../assets/section_line.png" alt="">
+        </div>
+  </div>
+  <div class="flex flex-col items-center pt-6 pb-4 justify-between md:flex-row">
+    <div>
+        <div style="background-image: url(../assets/gears-card-bg.png);background-repeat: no-repeat;">
+            <div class="flex items-center justify-end pt-2 pr-4 text-[#ff8605] font-bold">
+                <img src="../assets/clock.svg" class="w-[16px]" alt="">
+                <p class="pl-1">IN 4 DAYS</p>
+            </div>
+            <div class="flex items-center px-28 py-16">
+                <img src="../assets/gears-img-1.png" alt="">
+            </div>
+        </div>
+        <div class="pb-2">
+            <div class="flex justify-between text-white font-bold">
+                <h6 class="text-xl">HEADPHONE</h6>
+                <h6>$18</h6>
+            </div>
+            <div class="flex items-center justify-between">
+                <button class="px-4 py-2 text-white font-bold tracking-wide hover:bg-white hover:text-[#ff8605] ease-in-out duration-700 bg-[#ff8605]" style="clip-path: polygon(90% 0, 100% 34%, 100% 100%, 10% 100%, 0 66%, 0 0);"><span class="text-2xl">+ </span>ADD TO CART</button>
+                <button class="px-4 py-3 text-white font-bold tracking-wide hover:bg-white hover:text-[#ff8605] ease-in-out duration-700 bg-[#141419]" style="clip-path: polygon(90% 0, 100% 34%, 100% 100%, 10% 100%, 0 66%, 0 0);"><img src="../assets/heart (1).svg" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="pb-2">
+        <div style="background-image: url(../assets/gears-card-bg.png);background-repeat: no-repeat;">
+            <div class="flex items-center justify-end pt-2 pr-4 text-[#ff8605] font-bold">
+                <img src="../assets/clock.svg" class="w-[16px]" alt="">
+                <p class="pl-1">IN 4 DAYS</p>
+            </div>
+            <div class="flex items-center px-24 py-16">
+                <img src="../assets/gears-img-3.png" alt="">
+            </div>
+        </div>
+        <div>
+            <div class="flex justify-between text-white font-bold">
+                <h6 class="text-xl">HEADPHONE</h6>
+                <h6>$18</h6>
+            </div>
+            <div class="flex items-center justify-between">
+                <button class="px-4 py-2 text-white font-bold tracking-wide hover:bg-white hover:text-[#ff8605] ease-in-out duration-700 bg-[#ff8605]" style="clip-path: polygon(90% 0, 100% 34%, 100% 100%, 10% 100%, 0 66%, 0 0);"><span class="text-2xl">+ </span>ADD TO CART</button>
+                <button class="px-4 py-3 text-white font-bold tracking-wide hover:bg-white hover:text-[#ff8605] ease-in-out duration-700 bg-[#141419]" style="clip-path: polygon(90% 0, 100% 34%, 100% 100%, 10% 100%, 0 66%, 0 0);"><img src="../assets/heart (1).svg" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="pb-2">
+        <div style="background-image: url(../assets/gears-card-bg.png);background-repeat: no-repeat;">
+            <div class="flex items-center justify-end pt-2 pr-4 text-[#ff8605] font-bold">
+                <img src="../assets/clock.svg" class="w-[16px]" alt="">
+                <p class="pl-1">IN 4 DAYS</p>
+            </div>
+            <div class="flex items-center px-16 py-24">
+                <img src="../assets/gears-img-2.png" alt="">
+            </div>
+        </div>
+        <div>
+            <div class="flex justify-between text-white font-bold">
+                <h6 class="text-xl">HEADPHONE</h6>
+                <h6>$18</h6>
+            </div>
+            <div class="flex items-center justify-between">
+                <button class="px-4 py-2 text-white font-bold tracking-wide hover:bg-white hover:text-[#ff8605] ease-in-out duration-700 bg-[#ff8605]" style="clip-path: polygon(90% 0, 100% 34%, 100% 100%, 10% 100%, 0 66%, 0 0);"><span class="text-2xl">+ </span>ADD TO CART</button>
+                <button class="px-4 py-3 text-white font-bold tracking-wide hover:bg-white hover:text-[#ff8605] ease-in-out duration-700 bg-[#141419]" style="clip-path: polygon(90% 0, 100% 34%, 100% 100%, 10% 100%, 0 66%, 0 0);"><img src="../assets/heart (1).svg" alt=""></button>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+  </div>
+
+
+
+  <!-- check our gears section end -->
+
+
+<!-- newsletter section start -->
+
+<div class="px-4 bg-[#1b1320] md:px-6 pt-4">
+<div class="bg-[#1b1320] flex flex-col gap-6 items-center justify-center py-2 md:py-6 md:flex-row md:justify-around" style="background-size: cover; padding: 50px 25px; border-radius: 5px; background-image: url(../assets/newsletter-bg.jpg); background-repeat: no-repeat;">
+    <div class="flex flex-col gap-2 items-center justify-center md:flex-row">
+        <img src="../assets/newsletter-img.png" alt="">
+        <h6 class="text-white text-center font-bold text-3xl md:text-5xl md:text-left">SUBSCRIBE TO OUR NEWSLETTER</h6>
+    </div>
+    <div class="flex flex-col items-center gap-2  md:flex-row md:gap-0 relative">
+        <input type="mail" placeholder="Your Email Address" class="text-white w-[400px] outline-none focus:none bg-[#000] border border-[white]" style="padding: 15px 25px; margin-bottom: 15px; clip-path: polygon(96% 0, 100% 36%, 100% 100%, 4% 100%, 0 66%, 0 0);">
+        <button class="px-6 py-4 text-[#ff8605] font-bold tracking-wide absolute top-0 right-0  bg-white" style="clip-path: polygon(90% 0, 100% 34%, 100% 100%, 10% 100%, 0 66%, 0 0);">SUBSCRIBE</button>
+    </div>
+</div>
+</div>
+
+
+
+
+<!-- newsletter section end -->
+
+<!-- footer section start -->
+
+<div style="background-image: url(../assets/footer-bg.jpg);" class="py-4 px-6">
+    <div class="flex justify-around">
+        <div class="py-20">
+            <img src="../assets/logo.svg" alt="">
+        </div>
+        <div>
+            <ul class="text-white font-bold cursor-pointer md:flex items-center justify-center gap-4 py-20">
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>TOURNAMNET</li>
+                <li>TEAM</li>
+                <li>GEARS</li>
+                <li>CONTACT</li>
+            </ul>
+            </div>
+    </div>
+</div>
+
+<div style="background-image:url(../assets/footer-bg.jpg);">
+    <div>
+        <div>
+            <ul class="flex items-center justify-center gap-6 font-bold text-white">
+                <li>FAQ</li>
+                <li>HELP CENTER</li>
+                <li>TERMS OF USE</li>
+                <li>PRIVACY</li>
+            </ul>
+        </div>
+        <div class="pt-6 pb-6">
+            <ul class="flex items-center justify-center gap-2">
+                <li><img src="../assets/youtube.svg" alt=""></li>
+                <li><img src="../assets/facebook.svg" alt=""></li>
+                <li><img src="../assets/twitter.svg" alt=""></li>
+                <li><img src="../assets/linkedin.svg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="bg-[#1b1320] flex flex-col gap-2 items-center py-4 md:flex-row md:justify-around">
+    <div>
+        <h6 class="text-white font-bold text-center">COPYRIGHT ©.ALL RIGHT RESERVED</h6>
+    </div>
+    <div>
+        <img src="../assets/footer-bottom-img.png" alt="">
+    </div>
+</div>
+
+
+
+
+
+
+<!-- footer section end -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
